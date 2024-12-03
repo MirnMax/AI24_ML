@@ -33,7 +33,7 @@ def medinc_regressor(x: dict) -> dict:
     res = loaded_model.predict(x_df_ohe)[0]
     return {"prediction": res}
 
-ml_models = {}
+ml_models =  {}
 
 @asynccontextmanager
 async def ml_lifespan_manager(app: FastAPI):
